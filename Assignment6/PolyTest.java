@@ -1,4 +1,4 @@
-package scf6;
+
 
 import static org.junit.Assert.*;
 
@@ -24,12 +24,12 @@ public class PolyTest {
 	
 	@Test
 	public void when_two_oject_passed() {
-		assertEquals( true, obj.addPoly( new Poly(new int[][]{{2,1},{2,2},{2,4}}), new Poly(new int[][]{{2,1},{2,1}})) );
+		assertArrayEquals( new int[][]{ {2,4},{2,2},{4,1},{2,1},{0,0}}, obj.addPoly( new Poly(new int[][]{{2,1},{2,2},{2,4}}), new Poly(new int[][]{{2,1},{2,1}})) );
 	}
 	
 	@Test
 	public void when_two_oject_passed1() {
-		assertEquals( true, obj.multiplyPoly( new Poly(new int[][]{{2,1},{2,2},{2,4}}), new Poly(new int[][]{{2,1},{2,1}})) );
+		assertArrayEquals( new int[][]{ {0,0},{0,0},{8,2},{8,3},{0,0},{8,5}}, obj.multiplyPoly( new Poly(new int[][]{{2,1},{2,2},{2,4}}), new Poly(new int[][]{{2,1},{2,1}})) );
 	}
 	
 	@Test
@@ -42,3 +42,4 @@ public class PolyTest {
 	}
 	}
 }
+

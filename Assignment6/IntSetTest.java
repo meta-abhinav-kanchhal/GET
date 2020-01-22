@@ -1,4 +1,4 @@
-package scf6;
+
 
 import static org.junit.Assert.*;
 
