@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<head>
+    <title>MetaParking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#employee">Add Employee</a>
+        <a href="#vehicle">Add Vehicle</a>
+        <a href="#feedback">Give Feedback</a>
+        <a href="#pricing">Pricing</a>
+    </nav>
+    <!--Home-->
+    <div>
+        <form id="home">
+            <img src="pic.jpg" width="50%" height="20%">
+        </form>
+    </div>
+    <!--Add Employee Form-->
+    <div>
+        <details id="employee">
+            <summary>
+                <h1>Add Employee Details</h1>
+            </summary>
+            <form>
+                <input type="text" placeholder="Full Name"><br>
+                <input type="radio" name="gender"><label>Male</label>
+                <input type="radio" name="gender"><label>Female</label><br>
+                <input type="email" placeholder="Email"><br>
+                <input type="password" placeholder="Password"><br>
+                <input type="password" placeholder="Confirm Password"><br>
+                <input type="text" placeholder="Contact Number"><br>
+                <input type="submit" value="submit"><br>
+            </form>
+        </details>
+    </div>
+
+    <!--Add Vehicle Form-->
+    <div>
+        <details id="vehicle">
+            <summary>
+                <h1>Add Vehicle Form</h1>
+            </summary>
+            <form>
+                <input type="text" placeholder="company"><br>
+                <input type="text" placeholder="model"><br>
+                <input type="text" placeholder="type"><br>
+                <input type="text" placeholder="Vehicle number"><br>
+                <input type="text" placeholder="Employeed id"><br>
+                <textarea placeholder="Identification"></textarea></br>
+                <input type="submit" value="submit"><br>
+            </form>
+        </details>
+
+    </div>
+    <!--Give Feedback Form-->
+    <div>
+        <details id="feedback">
+            <summary>
+                <h1>Give Feedback</h1>
+            </summary>
+            <form>
+                <input type="text" placeholder="Name"><br>
+                <input type="text" placeholder="Email"><br>
+                <input type="text" placeholder="Subject"><br>
+                <textarea placeholder="Message"></textarea><br>
+                <input type="submit" value="submit"><br>
+            </form>
+        </details>
+    </div>
+
+
+    <!--Pricing Form-->
+    <div>
+        <details id="pricing">
+            <summary>
+                <h1> Pricing Form</h1>
+            </summary>
+            <form>
+                <div class="inlineBlock">
+                    <h2>Bicycle Pass</h2>
+                    <div class="circle"></div>
+                    <label>$5 Daily <br> $100 Monthly <br>$1000 Monthly</label><br>
+                    <input type="submit" value="Purchase">
+                </div>
+
+                <div class="inlineBlock">
+                    <h2>Bike Pass</h2>
+                    <div class="circle"></div>
+                    <label>$10 Daily <br> $200 Monthly <br>$2000 Monthly</label><br>
+                    <input type="submit" value="Purchase">
+                </div>
+
+                <div class="inlineBlock">
+                    <h2>Car Pass</h2>
+                    <div class="circle"></div>
+                    <label>$15 Daily <br> $300 Monthly <br>$3000 Monthly</label><br>
+                    <input type="submit" value="Purchase">
+                </div>
+            </form>
+        </details>
+    </div>
+</body>
+
+</html>
